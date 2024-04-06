@@ -60,7 +60,7 @@ public class BaseClass extends AbstractTestNGCucumberTests {
 
 	public int takeSnap() throws IOException {
 
-		int ram = new Random().nextInt(150, 50000);
+		int ram = (int) (Math.random()*99999 +99999);
 
 		File screenshotAs = driver.getScreenshotAs(OutputType.FILE);
 
